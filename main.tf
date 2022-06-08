@@ -1,7 +1,7 @@
 provider "google" {
-  credentials = file("./playground-s-11-5167275c-49e3728eda4a.json")
+  credentials = file("./playground-s-11-8449f1ae-fac76657fe73.json")
 
-  project = "playground-s-11-5167275c"
+  project = "playground-s-11-8449f1ae"
   region  = "europe-west1"
   zone    = "europe-west1-b"
 }
@@ -33,8 +33,8 @@ resource "google_compute_address" "vm_static_ip" {
 
 terraform {
     backend "gcs" {
-        bucket = "terraform-playground-s-11-5167275c"
+        bucket = "terraform-playground-s-11-8449f1ae"
         prefix = "terraform1"
-        credentials = "playground-s-11-5167275c-49e3728eda4a.json" 
+        credentials = "playground-s-11-8449f1ae-fac76657fe73.json" 
    }
 }
